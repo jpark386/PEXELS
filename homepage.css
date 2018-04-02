@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  .row1 {
+    background: url('https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-bottom: 30px;
+  }
+  
+
+  .row1 .menu {
+    padding: 10px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+  }
+  .row1 .menu > * {
+    margin: 0px 10px
+  }
+  .row1 .browse .popup .buttons{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid silver;
+    height: 30px;
+  }
+  
+  .row1 .browse .popup .buttons > *{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .row1 .browse .popup .buttons > *:hover{
+    background: lightgray;
+    cursor: pointer;
+    
+  }
+  
+  .row1 .browse .popup {
+    position: absolute;
+    background: white;
+    color: black;
+    display:none;
+    color: gray;
+    width: 150px;
+    border-radius: 3px;
+  }
+  
+  .row1 .browse .popup > a {
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .row1 .browse .popup > a:hover {
+    background: lightgray;
+  }
+  
+  .row1 .browse:hover .popup{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .row1 .browse {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu .button{
+    background: lightgreen;
+    border-radius: 3px;
+    padding: 5px 15px;
+    border: darkgreen;
+    cursor: pointer;
+  }
+  
+  .button:hover{
+    background: darkgreen;
+  }
+  
+  .row1 .title {
+    font-size: 2.5em;
+    padding-top: 10px;
+  }
+  .row1 .search {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    background: white;
+    align-items: center;
+    padding: 5px 20px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 1px 8px 0px black;
+  }
+  
+  .row1 .search input{
+    flex-grow: 1;
+    font-size: 1.5em;
+    border: none;
+  }
+  
+  .row1 .search input:focus {
+    outline: none;
+  }
+  
+  .row1 .search i{
+    color: gray;
+    font-size: 1.5em;
+  }
+  
+  .row1 .suggestions{
+    background: rgba(220,220,220,.3);
+    width: 80%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-around
+  }
+  
+  .row1 .suggestions div{
+    flex-grow: 1;
+    border-right: 1px solid white;
+    text-align: center;
+    padding: 6px 0;
+    cursor: pointer
+  }
+  
+  .row1 .suggestions div:last-child{
+    border: none;
+  }
